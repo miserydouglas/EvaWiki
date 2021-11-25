@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shippori Antique', sans-serif;
+
+}
+
+body{
+    background-color: #c2c2c2;
+}
+
+li,a{
+    font-family: 'Shippori Antique', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    background-color: #24252A;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    box-shadow: black 0px 3px 15px;
+}
+
+#tituloheader{
+    cursor: pointer;
+    font-family: 'Shippori Antique', sans-serif;
+    color: rgb(78, 214, 60);
+    background-color: #24252A;
+
+}
+
+#span1, #span2{
+    
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.nav_links{
+   list-style: none; 
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color:rgb(18, 156, 36) ;
+    padding: 6px;
+    
+    
+}
+
+#mudarcor{
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titulo{
+     
+    0%{
+        color: rgb(78, 214, 60);
+        opacity: 1;
+    }
+    25%{
+        color:blueviolet;
+        opacity: 1;
+    }
+    50%{
+       color: rgb(78, 214, 60);
+        opacity: 1;
+    }
+    75%{
+        color:blueviolet;
+        opacity: 1;
+    }
+
+    100%{
+        color: rgb(78, 214, 60);
+        opacity: 1;
+    }
+}
+
+
+main{
+    justify-content: space-between;
+    padding: 30px 10%;
+    margin-top: 2%;
+ 
+   
+}
+#titulomain2{
+    margin-top: 0px;
+    text-align: center;
+    align-items: center;
+    ;
+}
+
+.titulomaingiratorio{
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#titulomain{
+    color: rgb(47, 179, 30);
+    animation: girando 1s ease-in-out 0s infinite alternate;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+}
+
+@keyframes girando{
+    from {
+      transform: rotate(3deg);
+    }
+    to {
+      transform: rotate(-3deg);
+    }
+  }
+
+#corpo{
+    background-color: #ebebeb;
+    margin: 24px;
+    padding: 20px;
+    box-shadow: black 0px 1px 5px;
+    
+}
+
+footer{
+    background-color:#24252A;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    color: white;
+}
+
+
